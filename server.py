@@ -6,7 +6,7 @@ import time
 
 class MyHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
     def handle_one_request(self):
-	time.sleep(0.1)	
+	 time.sleep(0.1)	
         return SimpleHTTPServer.SimpleHTTPRequestHandler.handle_one_request(self)
 
 print("Serving local directory")
