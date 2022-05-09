@@ -6,6 +6,7 @@ import time
 
 class MyHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
     def handle_one_request(self):
+	print('Hi')
 	time.sleep(0.1)	
         return SimpleHTTPServer.SimpleHTTPRequestHandler.handle_one_request(self)
 
